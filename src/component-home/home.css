@@ -1,0 +1,7 @@
+#home{
+    background: #a73737;  
+    background: -webkit-linear-gradient(to right, #7a2828, #a73737);  
+    background: linear-gradient(to right, #7a2828, #a73737); 
+    height: 100vh;
+    max-width: 100%;
+}
