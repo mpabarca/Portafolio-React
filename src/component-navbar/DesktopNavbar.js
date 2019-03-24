@@ -1,19 +1,9 @@
-import React, { Component } from "react"
-import Sidebar from './Sidebar';
+import React, { Component } from "react";
 
-class Navbar extends Component{
+class DesktopNavbar extends Component{
     constructor(props){
         super(props);
-        this.sizeScreen=this.sizeScreen.bind(this);
     }
-
-    sizeScreen(){
-        console.log(window.screen.width);
-        console.log(window.screen.height);
-
-    }
-    
-
     render(){
         return(
             <div>
@@ -29,12 +19,10 @@ class Navbar extends Component{
                         </ul>
                     </div>
                 </nav>
-                <Sidebar />
-                <button onClick={this.sizeScreen}>Size</button>
             </div>
             
         )
     }
 }
 
-export default Navbar;
+export default DesktopNavbar;
