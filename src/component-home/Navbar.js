@@ -1,25 +1,22 @@
-import React, { Component } from "react";
-import "materialize-css/dist/js/materialize.min.js";
+import React, { Component } from "react"
 import Sidebar from './Sidebar';
 
 class Navbar extends Component{
     constructor(props){
         super(props);
         this.sizeScreen=this.sizeScreen.bind(this);
-        this.state={
-            screenUser: window.screen,
-        }
     }
 
     sizeScreen(){
-        console.log(this.screenUser);
-        console.log(this.heightScreen);
+        console.log(window.screen.width);
+        console.log(window.screen.height);
+
     }
     
 
     render(){
         return(
-            <div className="Home" id="home">
+            <div>
                 <nav>
                     <div className="nav-wrapper">
                         <a href="#" className="brand-logo right">LOGO</a>

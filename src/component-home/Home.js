@@ -1,24 +1,21 @@
-import React from 'react'
-import {BrowserRouter, Route} from 'react-router-dom';
+import React, {Component} from 'react'
 import Navbar from './Navbar';
 import './home.css';
 
-const Dashboard = () => <h2>Dashboard</h2>
-const Contact = () => <h2>Contact</h2>
+class Home extends Component{
 
-const Home = () => {
-    return (
-            <div>
-                <BrowserRouter>
-                    <div>
-                        <Navbar />
-                        <Route exact path="/" component={Contact} />
-                        <Route path="/surveys" component={Dashboard} />
-                    </div>
-                </BrowserRouter>
-                Hi There!
+    render(){
+        return(
+            <div className="Home" id="home">
+                <Navbar />
+                <div className="container">
+                    <h4>I am</h4>
+                    <h2>maría'Paz</h2>
+                    <h5>A junior Front-End development</h5>
+                    <button>CONTACT ME  <i class="far fa-envelope"></i></button>
+                </div>
             </div>
         )
+    }
 }
-
 export default Home;
