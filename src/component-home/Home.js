@@ -1,34 +1,24 @@
-import React, {Component} from 'react';
+import React from 'react'
+import {BrowserRouter, Route} from 'react-router-dom';
+import Navbar from './Navbar';
 import './home.css';
 
-class Home extends Component{
+const Dashboard = () => <h2>Dashboard</h2>
+const Contact = () => <h2>Contact</h2>
 
-    render(){
-        return(
-            <div className="Home" id="home">
-                <nav>
-                    <div className="nav-wrapper">
-                        <a href="#" className="brand-logo right">LOGO</a>
-                        <ul className="left hide-on-med-and-down">
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">ABOUT ME</a></li>
-                            <li><a href="">SKILLS</a></li>
-                            <li><a href="">PROJECTS</a></li>
-                            <li><a href="">CONTACT</a></li>
-                        </ul>
+const Home = () => {
+    return (
+            <div>
+                <BrowserRouter>
+                    <div>
+                        <Navbar />
+                        <Route exact path="/" component={Contact} />
+                        <Route path="/surveys" component={Dashboard} />
                     </div>
-                </nav>
-                <ul className="sidenav" id="mobile-home">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT ME</a></li>
-                    <li><a href="">SKILLS</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
+                </BrowserRouter>
+                Hi There!
             </div>
-            
         )
-    }
 }
 
 export default Home;
