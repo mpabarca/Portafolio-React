@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
+import Home from '../component-home/Home';
 
 class MobileNavbar extends Component {
     componentDidMount() {
@@ -18,7 +19,7 @@ class MobileNavbar extends Component {
                 </div>
                 <div className="right">
                     <ul id="slide-out" className="sidenav">
-                        <li><a className="waves-effect" href="#!">HOME</a></li>
+                        <li><a className="waves-effect" href={<Home/>}>HOME</a></li>
                         <li><a className="waves-effect" href="#!">ABOUT ME</a></li>
                         <li><a className="waves-effect" href="#!">SKILLS</a></li>
                         <li><a className="waves-effect" href="#!">PROJECTS</a></li>
