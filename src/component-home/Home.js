@@ -8,10 +8,10 @@ class Home extends Component{
         return(
             <div id="home">
                 <Container id="home-container">
-                    <Row><h4>I am</h4></Row>
-                    <Row><h2>maría'Paz</h2></Row>
-                    <Row><h5>A junior Front-End development</h5></Row>
-                    <Row><Button>CONTACT ME  <i class="far fa-envelope"></i></Button></Row>
+                    <Row id="home-iam">I am</Row>
+                    <Row id="home-name">maría'Paz</Row>
+                    <Row id="home-rol">A junior Front-End development</Row>
+                    <Row><Button id="home-button">  CONTACT ME  <i class="far fa-envelope"></i>  </Button></Row>
                 </Container>
             </div>
         )
