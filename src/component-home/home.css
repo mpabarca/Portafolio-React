@@ -7,7 +7,9 @@
     max-width: 100%;
 }
 #home-container{
-    position: fixed;
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-top:8%;
 }
 #home-iam, #home-name, #home-rol{
     color: #fff;
@@ -16,16 +18,16 @@
     font-family: 'Roboto', sans-serif;
 }
 #home-iam{
-    font-size: 20px;
+    font-size:25px;
     font-weight: 300;
 }
 #home-rol{
-    font-size:10px;
+    font-size:15px;
     font-weight: 300;
 }
 #home-name{
     font-family: 'Merriweather', serif;
-    font-size: 130px;
+    font-size: 145px;
     font-weight: 900;
 }
 #home-button{
@@ -35,30 +37,4 @@
     font-weight: 400;
     font-size: 15px;
     border: none;
-}
-@media screen and (min-width:768px){
-    #home-iam{
-        font-size:25px;
-        font-weight: 300;
-    }
-    #home-rol{
-        font-size:15px;
-        font-weight: 300;
-    }
-    #home-name{
-        font-size: 145px;
-        font-weight: 900;
-        padding-bottom: 0;
-    }
-    #home-button{
-        font-weight: 400;
-        font-size: 15px;
-    }
-    #home-container{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-30%, -50%);
-    }
-    
 }
