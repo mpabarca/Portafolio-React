@@ -2,6 +2,22 @@ import React, {Component} from 'react';
 import './about.css';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 
+const aboutButton = {
+    background:'#7a2828',
+    border: 'none',
+    borderRadius: 0,
+    fontFamily: "'Merriweather', serif",
+    fontWeight:'600',
+    height: 'auto',
+    marginTop: '10%'
+  };
+
+const aboutText = {
+    fontFamily: "'Roboto', sans-serif",
+    fontWeight: '300',
+    fontSize: '20px'
+};
+
 class About extends Component{
 
     render(){
@@ -10,8 +26,8 @@ class About extends Component{
                 <Container>
                     <Col><Image></Image></Col>
                     <Col>
-                        <Row>about Me</Row>
-                        <Row>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        <Row id="about-tittle">about Me</Row>
+                        <Row style={aboutText}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna 
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                             ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -21,8 +37,8 @@ class About extends Component{
                             deserunt mollit anim id est laborum."
                         </Row>
                         <Row>
-                            <Col><Button>Sp'</Button></Col>
-                            <Col><Button>En'</Button></Col>
+                            <Col><Button style={aboutButton}>Sp'</Button></Col>
+                            <Col><Button style={aboutButton}>En'</Button></Col>
                         </Row>
                     </Col>
                 </Container>
