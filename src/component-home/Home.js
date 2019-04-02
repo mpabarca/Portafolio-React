@@ -1,12 +1,14 @@
 import React, {Component} from 'react'
 import './home.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import Navbar from '../component-navbar/Navbar';
 
 class Home extends Component{
 
     render(){
         return(
             <div id="home">
+                <Navbar/>
                 <Container id="home-container">
                     <Row id="home-iam">I am</Row>
                     <Row id="home-name">maría'Paz</Row>

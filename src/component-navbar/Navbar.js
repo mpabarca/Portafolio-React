@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component{
 
@@ -13,19 +14,19 @@ class Navbar extends Component{
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">HOME</a>
+                                <Link to="/home"><a className="nav-link" href="#">HOME</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">ABOUT ME</a>
+                                <Link to="/about"><a className="nav-link" href="#">ABOUT ME</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">SKILLS</a>
+                                <Link to="/skills"><a className="nav-link" href="#">SKILLS</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">PROJECTS</a>
+                                <Link to="/projects"><a className="nav-link" href="#">PROJECTS</a></Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">CONTACT</a>
+                                <Link to="/contact"><a className="nav-link" href="#">CONTACT</a></Link>
                             </li>    
                         </ul>
                     </div>  

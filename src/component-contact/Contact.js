@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import './contact.css';
 import {Container, Col, Row} from 'react-bootstrap';
+import Navbar from '../component-navbar/Navbar';
 
 class Contact extends Component{
 
     render(){
         return(
             <div id="Contact">
+                <Navbar/>
                 <Container>
                     <Row>
                         <Col><a target="blank" href="https://www.instagram.com/pacita_tua/"><i class="fab fa-instagram"></i></a></Col>

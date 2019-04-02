@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './about.css';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import Navbar from '../component-navbar/Navbar';
 
 const aboutButton = {
     background:'#7a2828',
@@ -23,6 +24,7 @@ class About extends Component{
     render(){
         return(
             <div className="About">
+                <Navbar/>
                 <Container>
                     <Col><Image></Image></Col>
                     <Col>

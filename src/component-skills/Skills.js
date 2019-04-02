@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './skills.css';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import Navbar from '../component-navbar/Navbar';
 
 const skillsButton = {
     background:'#7a2828',
@@ -30,6 +31,7 @@ class Skills extends Component{
     render(){
         return(
             <div id="Skills">
+                <Navbar/>
                 <Container>
                     <Row>
                         <Col>
