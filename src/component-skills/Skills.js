@@ -16,7 +16,7 @@ const skillsButton = {
 const skillsText = {
     fontFamily: "'Roboto', sans-serif",
     fontWeight: '300',
-    fontSize: '25px'
+    fontSize: '20px'
 };
 const skillsIcon = {
     fontSize:'500%'
@@ -36,7 +36,7 @@ class Skills extends Component{
                     <Row>
                         <Col>
                             <Row id="skills-tittle">skills</Row>
-                            <Row tyle={skillsText}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            <Row style={skillsText}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna 
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. 

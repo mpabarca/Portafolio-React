@@ -13,21 +13,21 @@ class Navbar extends Component{
                     </button>
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link to="/home"><a className="nav-link" href="#">HOME</a></Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/about"><a className="nav-link" href="#">ABOUT ME</a></Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/skills"><a className="nav-link" href="#">SKILLS</a></Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/projects"><a className="nav-link" href="#">PROJECTS</a></Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/contact"><a className="nav-link" href="#">CONTACT</a></Link>
-                            </li>    
+                            <Link to="/home"><li className="nav-item">
+                                <a className="nav-link" href="#">HOME</a>
+                            </li></Link>
+                            <Link to="/about"><li className="nav-item">
+                                <a className="nav-link" href="#">ABOUT ME</a>
+                            </li></Link>
+                            <Link to="/skills"><li className="nav-item">
+                                <a className="nav-link" href="#">SKILLS</a>
+                            </li></Link>
+                            <Link to="/projects"><li className="nav-item">
+                                <a className="nav-link" href="#">PROJECTS</a>
+                            </li></Link>
+                            <Link to="/contact"><li className="nav-item">
+                                <a className="nav-link" href="#">CONTACT</a>
+                            </li></Link> 
                         </ul>
                     </div>  
                     <a className="navbar-brand" href="#">LOGO</a>
