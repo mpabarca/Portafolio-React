@@ -12,7 +12,7 @@ import Projects from './component-projects/Projects';
 import Contact from './component-contact/Contact';
 
 ReactDOM.render(
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <div>
         <Route exact path='/' component={App} />
         <Route exact path='/home' component={Home} />
